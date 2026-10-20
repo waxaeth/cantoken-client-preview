@@ -27,7 +27,7 @@
 .hero-visual .hero-art{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;object-position:center}
 :root{--issuer-metal:#b98768;--issuer-light:#fbf5f0;--issuer-ink:#35251d;--investor-metal:#8f9fae;--investor-light:#eef2f5;--investor-ink:#233441;--issuer-finish:repeating-linear-gradient(96deg,rgba(255,255,255,.06) 0 1px,rgba(62,42,30,.012) 1px 2px,transparent 2px 8px),linear-gradient(116deg,transparent 28%,rgba(255,255,255,.12) 48%,transparent 66%),linear-gradient(112deg,#e8d1c0 0%,#f2e2d5 54%,#fbf5ee 100%);--investor-finish:repeating-linear-gradient(96deg,rgba(255,255,255,.085) 0 1px,rgba(40,51,62,.018) 1px 2px,transparent 2px 8px),linear-gradient(116deg,transparent 28%,rgba(255,255,255,.18) 48%,transparent 66%),linear-gradient(112deg,#8f9fae 0%,#c9d3db 54%,#eef2f5 100%)}
 .hero h1{font-weight:600}
-.hero-description{font-weight:500}
+.hero-description{font-weight:500;max-width:480px}
 .hero-actions a[data-audience="issuer"]{background:var(--issuer-finish);border-color:var(--issuer-metal);color:var(--issuer-ink)}
 .hero-actions a[data-audience="investor"]{background:var(--investor-finish);border-color:var(--investor-metal);color:var(--investor-ink)}
 .hero-actions a[data-audience]{box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 2px 6px rgba(24,39,58,.06)}
