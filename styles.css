@@ -130,7 +130,7 @@
 /* Potential offering categories: four cards above three centred cards on desktop. */
 .offering-cards-section{padding:78px 0 86px;background:#fff}
 .offering-card-row{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
-.offering-card{--card-tint:#edf1f9;position:relative;isolation:isolate;flex:0 1 calc((100% - 60px)/4);min-width:0;height:430px;overflow:hidden;border:1px solid #dfe5ee;border-radius:26px;background:var(--card-tint);box-shadow:0 10px 25px rgba(14,39,76,.055);transition:box-shadow .25s ease,transform .25s ease}
+.offering-card{--card-tint:#edf1f9;position:relative;isolation:isolate;flex:0 1 calc((100% - 60px)/4);min-width:0;height:470px;overflow:hidden;border:1px solid #dfe5ee;border-radius:26px;background:var(--card-tint);box-shadow:0 10px 25px rgba(14,39,76,.055);transition:box-shadow .25s ease,transform .25s ease}
 .offering-card:nth-child(2){--card-tint:#f5e9df}
 .offering-card:nth-child(3){--card-tint:#e8eef8}
 .offering-card:nth-child(4){--card-tint:#edf0fa}
@@ -169,6 +169,8 @@
 @media(min-width:768px) and (max-width:1024px){.hero.container{min-height:calc(100svh - 77px - 82px)}}
 @media(max-width:767px){.hero-partners-inner{min-height:74px}.partner-strip-label{flex-basis:105px;padding:0 8px 0 20px;font-size:9px;white-space:normal}.partner-marquee-set{gap:32px;padding-inline:16px}.partner-marquee-set a{height:66px}.partner-marquee-set img{max-width:128px;max-height:38px}.partner-marquee-set img.rocklinc-logo{width:128px;height:21px}.partner-marquee-set img[src$="osler.svg"]{width:120px;height:34px}}
 @media(prefers-reduced-motion:reduce){.partner-marquee{overflow-x:auto;mask-image:none;scrollbar-width:thin}.partner-marquee-track.is-ready{animation:none}.partner-marquee-set[aria-hidden="true"]{display:none}}
+
+@media(min-width:1280px){.offering-card img{inset:auto 0 0;height:70%;opacity:.9;object-position:center 18%}.offering-card::after{background:linear-gradient(180deg,var(--card-tint) 0%,var(--card-tint) 42%,rgba(255,255,255,.9) 55%,rgba(255,255,255,.58) 70%,rgba(255,255,255,.18) 100%)}}
 
 .shared-value-section{background:linear-gradient(115deg,#f0f5fc 0%,#fafcff 70%);border-block:1px solid #e3ebf6}
 .shared-value-grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:90px;align-items:start}
