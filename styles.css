@@ -147,6 +147,46 @@
 @media(max-width:767px){.offering-cards-section{padding:52px 0 60px}.offering-card-row{gap:18px}.offering-card{flex-basis:100%;max-width:440px;height:450px;border-radius:22px}.offering-card-copy{padding:24px 22px 0}.offering-card-copy h3{font-size:22px}.offering-card-copy p{font-size:14px;line-height:1.48;margin-top:11px}}
 @media(prefers-reduced-motion:reduce){.offering-card{transition:none}}
 
+/* Partner network immediately below the hero. The duplicate is decorative and removed for reduced motion. */
+.hero-partners{background:#fbfcff;border-block:1px solid var(--gray-5);scroll-margin-top:88px}
+.hero-partners-inner{display:flex;align-items:center;min-height:82px;width:100%;margin-inline:auto}
+.partner-strip-label{flex:0 0 max(176px,calc((100vw - 1280px)/2));padding:0 22px 0 max(56px,calc((100vw - 1280px)/2));border-right:1px solid var(--gray-4);color:var(--primary-darkest);font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.12em;line-height:1.4;text-transform:uppercase;white-space:nowrap}
+.partner-marquee{position:relative;min-width:0;flex:1;overflow:hidden;mask-image:linear-gradient(to right,transparent,#000 3%,#000 97%,transparent)}
+.partner-marquee-track{display:flex;width:max-content}
+.partner-marquee-track.is-ready{animation:partner-scroll 44s linear infinite}
+.partner-marquee:hover .partner-marquee-track,.partner-marquee:focus-within .partner-marquee-track{animation-play-state:paused}
+.partner-marquee-set{display:flex;align-items:center;gap:16px;flex:none;padding-inline:8px}
+.partner-marquee-set a{display:flex;align-items:center;justify-content:center;flex:0 0 160px;width:160px;height:70px;padding:8px;border-radius:4px;transition:background .2s ease,transform .2s ease}
+.partner-marquee-set a:hover{background:#edf3fd;transform:translateY(-1px)}
+.partner-marquee-set img{display:block;width:auto;height:auto;max-width:144px;max-height:42px;object-fit:contain}
+.partner-marquee-set img.rocklinc-logo{filter:brightness(0) saturate(100%) invert(13%) sepia(46%) saturate(1740%) hue-rotate(186deg) brightness(84%)}
+.partner-marquee-set img[src$="kell-kapital-crop.webp"]{max-height:54px}
+.partner-marquee-set img[src$="ghosh-law.png"]{max-height:48px}
+.partner-marquee-set img[src$="good-mining.png"]{max-height:34px}
+@keyframes partner-scroll{to{transform:translateX(-50%)}}
+@media(min-width:768px){.hero.container{min-height:calc(100svh - 89px - 82px)}}
+@media(min-width:768px) and (max-width:1024px){.hero.container{min-height:calc(100svh - 77px - 82px)}}
+@media(max-width:767px){.hero-partners-inner{min-height:74px}.partner-strip-label{flex-basis:105px;padding:0 8px 0 20px;font-size:9px;white-space:normal}.partner-marquee-set a{flex-basis:140px;width:140px;height:66px}.partner-marquee-set img{max-width:128px;max-height:38px}}
+@media(prefers-reduced-motion:reduce){.partner-marquee{overflow-x:auto;mask-image:none;scrollbar-width:thin}.partner-marquee-track.is-ready{animation:none}.partner-marquee-set[aria-hidden="true"]{display:none}}
+
+/* Section labels use the brand blue rule in place of an editorial sequence number. */
+.new-copy .section-kicker{gap:11px;color:var(--primary-main);font-size:11px;font-weight:600;letter-spacing:.14em}
+.new-copy .section-kicker::before{content:"";display:block;width:24px;height:2px;flex:none;border-radius:2px;background:currentColor}
+.new-copy .workflow-section .section-kicker{color:var(--primary-light)}
+
+/* On wide desktop cards, imagery stays in the lower half and sits behind a soft tint. */
+@media(min-width:1280px){.offering-card img{inset:auto 0 0;height:70%;opacity:.9;object-position:center 18%}.offering-card::after{background:linear-gradient(180deg,var(--card-tint) 0%,var(--card-tint) 42%,rgba(255,255,255,.9) 55%,rgba(255,255,255,.58) 70%,rgba(255,255,255,.18) 100%)}}
+
+.shared-value-section{background:linear-gradient(115deg,#f0f5fc 0%,#fafcff 70%);border-block:1px solid #e3ebf6}
+.shared-value-grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:90px;align-items:start}
+.shared-value-grid h2{color:var(--primary-darkest)}
+.shared-value-copy{padding-left:30px;border-left:2px solid var(--primary-main)}
+.shared-value-copy p{max-width:690px}
+.shared-value-copy p+p{margin-top:22px}
+.shared-value-copy .lead{font-size:23px;line-height:1.42;font-weight:600;color:var(--primary-darkest)}
+@media(max-width:900px){.shared-value-grid{grid-template-columns:1fr;gap:28px}.shared-value-copy{padding-left:22px}}
+@media(max-width:767px){.shared-value-copy .lead{font-size:19px}}
+
 /* Supplemental copy controls and source attribution. */
 .investor-video-link{display:flex;margin-top:18px;text-align:left}
 .copy-body .copy-points{margin-top:24px}

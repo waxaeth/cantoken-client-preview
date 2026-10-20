@@ -1,5 +1,13 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('#main-nav');
+const partnerLogoSet = document.querySelector('.partner-marquee-set');
+if (partnerLogoSet) {
+  const duplicate = partnerLogoSet.cloneNode(true);
+  duplicate.setAttribute('aria-hidden', 'true');
+  duplicate.querySelectorAll('a').forEach(link => { link.tabIndex = -1; });
+  partnerLogoSet.parentElement.append(duplicate);
+  partnerLogoSet.parentElement.classList.add('is-ready');
+}
 function closeMenu() { nav.classList.remove('is-open'); menuToggle.setAttribute('aria-expanded', 'false'); menuToggle.setAttribute('aria-label', 'Open menu'); }
 menuToggle.addEventListener('click', () => { const open = menuToggle.getAttribute('aria-expanded') !== 'true'; menuToggle.setAttribute('aria-expanded', String(open)); menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu'); nav.classList.toggle('is-open', open); });
 nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
