@@ -155,18 +155,19 @@
 .partner-marquee-track{display:flex;width:max-content}
 .partner-marquee-track.is-ready{animation:partner-scroll 44s linear infinite}
 .partner-marquee:hover .partner-marquee-track,.partner-marquee:focus-within .partner-marquee-track{animation-play-state:paused}
-.partner-marquee-set{display:flex;align-items:center;gap:16px;flex:none;padding-inline:8px}
-.partner-marquee-set a{display:flex;align-items:center;justify-content:center;flex:0 0 160px;width:160px;height:70px;padding:8px;border-radius:4px;transition:background .2s ease,transform .2s ease}
+.partner-marquee-set{display:flex;align-items:center;gap:44px;flex:none;padding-inline:22px}
+.partner-marquee-set a{display:flex;align-items:center;justify-content:center;flex:0 0 auto;width:auto;height:70px;padding:0;border-radius:4px;transition:background .2s ease,transform .2s ease}
 .partner-marquee-set a:hover{background:#edf3fd;transform:translateY(-1px)}
 .partner-marquee-set img{display:block;width:auto;height:auto;max-width:144px;max-height:42px;object-fit:contain}
-.partner-marquee-set img.rocklinc-logo{filter:brightness(0) saturate(100%) invert(13%) sepia(46%) saturate(1740%) hue-rotate(186deg) brightness(84%)}
+.partner-marquee-set img.rocklinc-logo{width:144px;height:24px;max-width:none;max-height:none;filter:brightness(0) saturate(100%) invert(13%) sepia(46%) saturate(1740%) hue-rotate(186deg) brightness(84%)}
+.partner-marquee-set img[src$="osler.svg"]{width:120px;height:34px;max-width:none;max-height:none}
 .partner-marquee-set img[src$="kell-kapital-crop.webp"]{max-height:54px}
 .partner-marquee-set img[src$="ghosh-law.png"]{max-height:48px}
 .partner-marquee-set img[src$="good-mining.png"]{max-height:34px}
 @keyframes partner-scroll{to{transform:translateX(-50%)}}
 @media(min-width:768px){.hero.container{min-height:calc(100svh - 89px - 82px)}}
 @media(min-width:768px) and (max-width:1024px){.hero.container{min-height:calc(100svh - 77px - 82px)}}
-@media(max-width:767px){.hero-partners-inner{min-height:74px}.partner-strip-label{flex-basis:105px;padding:0 8px 0 20px;font-size:9px;white-space:normal}.partner-marquee-set a{flex-basis:140px;width:140px;height:66px}.partner-marquee-set img{max-width:128px;max-height:38px}}
+@media(max-width:767px){.hero-partners-inner{min-height:74px}.partner-strip-label{flex-basis:105px;padding:0 8px 0 20px;font-size:9px;white-space:normal}.partner-marquee-set{gap:32px;padding-inline:16px}.partner-marquee-set a{height:66px}.partner-marquee-set img{max-width:128px;max-height:38px}.partner-marquee-set img.rocklinc-logo{width:128px;height:21px}.partner-marquee-set img[src$="osler.svg"]{width:120px;height:34px}}
 @media(prefers-reduced-motion:reduce){.partner-marquee{overflow-x:auto;mask-image:none;scrollbar-width:thin}.partner-marquee-track.is-ready{animation:none}.partner-marquee-set[aria-hidden="true"]{display:none}}
 
 /* Section labels use the brand blue rule in place of an editorial sequence number. */
