@@ -170,11 +170,6 @@
 @media(max-width:767px){.hero-partners-inner{min-height:74px}.partner-strip-label{flex-basis:105px;padding:0 8px 0 20px;font-size:9px;white-space:normal}.partner-marquee-set{gap:32px;padding-inline:16px}.partner-marquee-set a{height:66px}.partner-marquee-set img{max-width:128px;max-height:38px}.partner-marquee-set img.rocklinc-logo{width:128px;height:21px}.partner-marquee-set img[src$="osler.svg"]{width:120px;height:34px}}
 @media(prefers-reduced-motion:reduce){.partner-marquee{overflow-x:auto;mask-image:none;scrollbar-width:thin}.partner-marquee-track.is-ready{animation:none}.partner-marquee-set[aria-hidden="true"]{display:none}}
 
-/* Section labels use the brand blue rule in place of an editorial sequence number. */
-.new-copy .section-kicker{gap:11px;color:var(--primary-main);font-size:11px;font-weight:600;letter-spacing:.14em}
-.new-copy .section-kicker::before{content:"";display:block;width:24px;height:2px;flex:none;border-radius:2px;background:currentColor}
-.new-copy .workflow-section .section-kicker{color:var(--primary-light)}
-
 /* On wide desktop cards, imagery stays in the lower half and sits behind a soft tint. */
 @media(min-width:1280px){.offering-card img{inset:auto 0 0;height:70%;opacity:.9;object-position:center 18%}.offering-card::after{background:linear-gradient(180deg,var(--card-tint) 0%,var(--card-tint) 42%,rgba(255,255,255,.9) 55%,rgba(255,255,255,.58) 70%,rgba(255,255,255,.18) 100%)}}
 
