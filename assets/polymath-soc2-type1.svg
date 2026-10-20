@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">SOC 2 Type I</title>
+  <desc id="desc">Security audit mark for Polymath infrastructure</desc>
+  <rect x="2" y="2" width="116" height="116" rx="12" fill="#E1EEFD" stroke="#1A56AF" stroke-width="3"/>
+  <path d="M60 16 94 29v27c0 23-14 40-34 49C40 96 26 79 26 56V29Z" fill="#002D61"/>
+  <text x="60" y="54" text-anchor="middle" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="20" font-weight="700">SOC 2</text>
+  <path d="m44 68 11 10 23-24" fill="none" stroke="#BBD7FB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="60" y="113" text-anchor="middle" fill="#002D61" font-family="Arial,sans-serif" font-size="10" font-weight="700">TYPE I</text>
+</svg>

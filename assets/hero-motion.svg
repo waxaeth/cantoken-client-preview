@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" preserveAspectRatio="xMidYMid slice">
+  <style>
+    .lake,.harbour,.coast{animation:water-drift 5.6s ease-in-out infinite alternate}
+    .lake path,.harbour path,.coast path{stroke-dasharray:18 12;animation:current 3.8s linear infinite}
+    .harbour{animation-duration:7s;animation-delay:-3s}
+    .coast{animation-duration:6.4s;animation-delay:-5s}
+    .trees{animation:canopy-sway 5.3s ease-in-out infinite alternate}
+    .crops{animation:field-breeze 5.8s ease-in-out infinite alternate}
+    .wind{animation:wind-sweep 5.4s ease-in-out infinite alternate}
+    .city{animation:city-light 7s ease-in-out infinite}
+    .quarry{animation:quarry-haze 8s ease-in-out infinite alternate}
+    .maple{animation:maple-glow 7s ease-in-out infinite}
+    @keyframes water-drift{from{transform:translateX(-10px);opacity:.32}to{transform:translateX(10px);opacity:.68}}
+    @keyframes current{to{stroke-dashoffset:-30}}
+    @keyframes canopy-sway{from{transform:translateX(-5px);opacity:.22}to{transform:translateX(6px);opacity:.53}}
+    @keyframes field-breeze{from{transform:translate(5px,-2px);opacity:.22}to{transform:translate(-7px,3px);opacity:.54}}
+    @keyframes wind-sweep{from{transform:translateX(-12px);opacity:.16}to{transform:translateX(12px);opacity:.46}}
+    @keyframes city-light{0%,100%{opacity:.16}45%{opacity:.62}65%{opacity:.22}}
+    @keyframes quarry-haze{from{transform:translateX(-8px);opacity:.1}to{transform:translateX(10px);opacity:.3}}
+    @keyframes maple-glow{0%,100%{opacity:.04}50%{opacity:.17}}
+  </style>
+  <defs>
+    <clipPath id="lake-area"><path d="M520 320 646 293 747 350 696 421 592 416 514 371Z"/></clipPath>
+    <clipPath id="forest-area"><path d="M746 191 869 126 1028 164 1054 268 935 331 773 286Z"/></clipPath>
+    <clipPath id="field-area"><path d="M987 242 1109 188 1314 235 1295 359 1158 414 985 351Z"/></clipPath>
+    <clipPath id="wind-area"><path d="M448 489 606 424 833 513 827 670 677 719 454 611Z"/></clipPath>
+    <clipPath id="harbour-area"><path d="M833 605 1008 544 1231 643 1245 769 1099 823 846 714Z"/></clipPath>
+    <clipPath id="coast-area"><path d="M1290 516 1459 472 1636 538 1642 669 1525 753 1329 679Z"/></clipPath>
+    <filter id="soft-glint" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="0.65"/></filter>
+    <filter id="soft-haze" x="-30%" y="-100%" width="160%" height="300%"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <!-- Small highlights shift over the water without moving the glass tiles. -->
+  <g class="lake" clip-path="url(#lake-area)" fill="none" stroke="#ddfbff" stroke-width="5" stroke-linecap="round" filter="url(#soft-glint)">
+    <path d="M575 354q25-8 49-2m3 12q29-8 58-3m-103 18q28-7 51-3m20 14q20-5 39-2"/>
+  </g>
+  <g class="harbour" clip-path="url(#harbour-area)" fill="none" stroke="#d1f7ff" stroke-width="5.5" stroke-linecap="round" filter="url(#soft-glint)">
+    <path d="M897 676q38-9 76-1m75 23q37-9 73-2m-202 29q48-10 96-3m58 22q42-8 86-3m-132 28q45-8 89-2"/>
+  </g>
+  <g class="coast" clip-path="url(#coast-area)" fill="none" stroke="#d8ffff" stroke-width="5.5" stroke-linecap="round" filter="url(#soft-glint)">
+    <path d="M1352 614q29-11 62-4m50 20q43-11 84-3m-192 30q43-8 85-1m32 25q53-12 103-3m-164 26q35-7 70-1"/>
+  </g>
+  <!-- Tiny alternating highlights suggest a breeze through the trees and crops. -->
+  <g class="trees" clip-path="url(#forest-area)" fill="none" stroke="#d8efc1" stroke-width="7" stroke-linecap="round" filter="url(#soft-glint)">
+    <path d="m802 230 7-19m24 31 8-22m20-27 7-18m20 57 8-25m22-25 7-20m22 65 7-22m28-27 6-19"/>
+  </g>
+  <g class="crops" clip-path="url(#field-area)" fill="none" stroke="#fff1bd" stroke-width="6" stroke-linecap="round" filter="url(#soft-glint)">
+    <path d="M1028 272q61-5 122 12m-113 10q65-4 129 14m-116 11q69-4 135 14m-118 9q69-2 135 15m-116 9q64 2 125 16"/>
+  </g>
+  <g class="wind" clip-path="url(#wind-area)" fill="none" stroke="#e1f7ff" stroke-width="5" stroke-linecap="round" filter="url(#soft-glint)">
+    <path d="M495 524q36-10 72-4m-19 35q47-9 94-3m-49 43q55-10 108-2m-89 38q52-8 102-1"/>
+  </g>
+  <g class="quarry" fill="#f3ece0" filter="url(#soft-haze)"><ellipse cx="789" cy="395" rx="63" ry="8"/></g>
+  <g class="city" fill="#dcf5ff" filter="url(#soft-glint)">
+    <circle cx="1219" cy="441" r="5"/><circle cx="1261" cy="421" r="4"/><circle cx="1310" cy="453" r="4"/><circle cx="1352" cy="479" r="5"/>
+  </g>
+  <g class="maple" fill="#ffddcc" filter="url(#soft-haze)"><ellipse cx="969" cy="456" rx="107" ry="62"/></g>
+</svg>
