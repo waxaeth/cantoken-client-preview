@@ -164,6 +164,12 @@
 .partner-marquee-set img[src$="kell-kapital-crop.webp"]{max-height:54px}
 .partner-marquee-set img[src$="ghosh-law.png"]{max-height:48px}
 .partner-marquee-set img[src$="good-mining.png"]{max-height:34px}
+.partner-marquee-set a.hayward-partner{gap:5px;min-width:145px;height:64px;padding:3px 6px;background:#050505;border:1px solid #27211a;border-radius:5px}
+.partner-marquee-set a.hayward-partner:hover{background:#101010}
+.hayward-symbol{position:relative;display:block;flex:0 0 42px;width:42px;height:58px;overflow:hidden}
+.partner-marquee-set .hayward-symbol img{position:absolute;left:-47px;top:-33px;width:135px;height:auto;max-width:none;max-height:none;object-fit:initial}
+.hayward-wordmark{display:block;color:#d9dce0;font-size:11px;line-height:1.05;font-weight:700;letter-spacing:.05em;white-space:nowrap}
+.hayward-wordmark span{display:block;margin-top:3px;color:#efb735;font-size:8px;line-height:1.15;letter-spacing:.08em}
 @keyframes partner-scroll{to{transform:translateX(-50%)}}
 @media(min-width:768px){.hero.container{min-height:calc(100svh - 89px - 82px)}}
 @media(min-width:768px) and (max-width:1024px){.hero.container{min-height:calc(100svh - 77px - 82px)}}
